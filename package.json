@@ -18,6 +18,8 @@
     "test:coverage": "npm run test -- --coverage"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "clsx": "^1.2.1",
     "react": "^16.14.0"
   },
   "devDependencies": {
@@ -32,6 +34,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@paciolan/eslint-config-react": "^1.0.4",
     "@paciolan/remote-component": "^2.10.2",
+    "@types/react": "^18.0.15",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
@@ -58,8 +61,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint && npm run build && npm run test:changed",
+      "pre-commit": " npm run build && npm run test:changed",
       "pre-push": "npm run test:coverage"
     }
   },
