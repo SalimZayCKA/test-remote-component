@@ -34,6 +34,8 @@ module.exports = {
   },
   externals: {
     ...externals,
+    "@material-ui/core/Button": "@material-ui/core/Button",
+    react: "react",
     "remote-component.config.js": "remote-component.config.js"
   },
   module: {

@@ -4,6 +4,7 @@
 
 module.exports = {
   resolve: {
-    react: require("react")
+    react: require("react"),
+    "@material-ui/core/Button": require("@material-ui/core/Button")
   }
 };
