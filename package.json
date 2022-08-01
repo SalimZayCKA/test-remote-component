@@ -1,10 +1,10 @@
 {
-  "name": "@paciolan/remote-component-starter",
+  "name": "test-remote-component",
   "version": "1.0.0-semantic-versioning",
   "description": "Remote Component Starter",
   "private": true,
   "browser": "dist/main.js",
-  "author": "Paciolan",
+  "author": "salimzayCKA",
   "license": "MIT",
   "scripts": {
     "build": "npm run clean && cross-env NODE_ENV=production webpack --mode production",
@@ -15,8 +15,7 @@
     "cz": "git-cz",
     "test": "echo no tests",
     "test:changed": "npm run test -- --changedSince HEAD",
-    "test:coverage": "npm run test -- --coverage",
-    "lint": "eslint ."
+    "test:coverage": "npm run test -- --coverage"
   },
   "dependencies": {
     "react": "^16.14.0"
