@@ -1,7 +1,19 @@
 import React from "react";
 import Button, { ButtonProps } from "@material-ui/core/Button";
 
-const CkaButton = ({
+type Modify<T, R> = Omit<T, keyof R> & R;
+
+export type CkaButtonProps = Modify<
+  ButtonProps,
+  {
+    color?: "primary" | "danger" | "default";
+    iconOnly?: boolean;
+    zeroPadding?: boolean;
+    forceClassName?: boolean;
+  }
+>;
+
+const CkaButton: React.FC<CkaButtonProps> = ({
   children,
   color = "default",
   variant = "contained",
