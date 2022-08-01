@@ -27,30 +27,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var Button_1 = __importDefault(require("@material-ui/core/Button"));
-var styles_1 = require("./styles");
-var clsx_1 = __importDefault(require("clsx"));
 var CkaButton = function (_a) {
-    var _b;
-    var children = _a.children, _c = _a.color, color = _c === void 0 ? "default" : _c, _d = _a.variant, variant = _d === void 0 ? "contained" : _d, _e = _a.disableElevation, disableElevation = _e === void 0 ? true : _e, _f = _a.iconOnly, iconOnly = _f === void 0 ? false : _f, zeroPadding = _a.zeroPadding, className = _a.className, _g = _a.forceClassName, forceClassName = _g === void 0 ? false : _g, restProps = __rest(_a, ["children", "color", "variant", "disableElevation", "iconOnly", "zeroPadding", "className", "forceClassName"]);
-    var classes = (0, styles_1.useStyles)();
-    var buttonClasses = (_b = {},
-        _b[classes.zeroPadding] = zeroPadding === true,
-        _b[classes.iconOnly] = iconOnly === true,
-        _b[classes.genericOutline] = variant === "outlined",
-        _b[classes.containedSuccess] = color === "primary" && variant === "contained",
-        _b[classes.outlinedSuccess] = color === "primary" && variant === "outlined",
-        _b[classes.textSuccess] = color === "primary" && variant === "text",
-        _b[classes.containedDanger] = color === "danger" && variant === "contained",
-        _b[classes.outlinedDanger] = color === "danger" && variant === "outlined",
-        _b[classes.textDanger] = color === "danger" && variant === "text",
-        _b[classes.containedSecondary] = color === "default" && variant === "contained",
-        _b[classes.outlinedSecondary] = color === "default" && variant === "outlined",
-        _b[classes.textSecondary] = color === "default" && variant === "text",
-        _b);
-    var finalClassName = forceClassName && className
-        ? className
-        : (0, clsx_1.default)(classes.generic, buttonClasses, className);
-    return (react_1.default.createElement(Button_1.default, __assign({}, restProps, { variant: variant, disableElevation: disableElevation, className: finalClassName }), children));
+    var children = _a.children, _b = _a.color, color = _b === void 0 ? "default" : _b, _c = _a.variant, variant = _c === void 0 ? "contained" : _c, _d = _a.disableElevation, disableElevation = _d === void 0 ? true : _d, _e = _a.iconOnly, iconOnly = _e === void 0 ? false : _e, zeroPadding = _a.zeroPadding, className = _a.className, _f = _a.forceClassName, forceClassName = _f === void 0 ? false : _f, restProps = __rest(_a, ["children", "color", "variant", "disableElevation", "iconOnly", "zeroPadding", "className", "forceClassName"]);
+    return (react_1.default.createElement(Button_1.default, __assign({}, restProps, { variant: variant, disableElevation: disableElevation }), children));
 };
 exports.default = CkaButton;
 //# sourceMappingURL=App.js.map
