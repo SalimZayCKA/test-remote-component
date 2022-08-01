@@ -13,7 +13,7 @@ export type CkaButtonProps = Modify<
   }
 >;
 
-const CkaButton: React.FC<CkaButtonProps> = ({
+export const CkaButton: React.FC<CkaButtonProps> = ({
   children,
   color = "default",
   variant = "contained",
@@ -34,5 +34,3 @@ const CkaButton: React.FC<CkaButtonProps> = ({
     </Button>
   );
 };
-
-export default CkaButton;

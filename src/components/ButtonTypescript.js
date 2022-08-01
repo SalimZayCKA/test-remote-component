@@ -25,11 +25,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CkaButton = void 0;
 var react_1 = __importDefault(require("react"));
 var Button_1 = __importDefault(require("@material-ui/core/Button"));
 var CkaButton = function (_a) {
     var children = _a.children, _b = _a.color, color = _b === void 0 ? "default" : _b, _c = _a.variant, variant = _c === void 0 ? "contained" : _c, _d = _a.disableElevation, disableElevation = _d === void 0 ? true : _d, _e = _a.iconOnly, iconOnly = _e === void 0 ? false : _e, zeroPadding = _a.zeroPadding, className = _a.className, _f = _a.forceClassName, forceClassName = _f === void 0 ? false : _f, restProps = __rest(_a, ["children", "color", "variant", "disableElevation", "iconOnly", "zeroPadding", "className", "forceClassName"]);
     return (react_1.default.createElement(Button_1.default, __assign({}, restProps, { variant: variant, disableElevation: disableElevation }), children));
 };
-exports.default = CkaButton;
+exports.CkaButton = CkaButton;
 //# sourceMappingURL=ButtonTypescript.js.map
